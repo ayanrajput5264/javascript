@@ -1,3 +1,7 @@
+// question no 0
+
+// alert("welcome")
+
 //  question no 1
 
 //  alert("Error! Please Enter valid Password")
