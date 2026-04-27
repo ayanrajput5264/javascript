@@ -1,42 +1,23 @@
-// opreters
+// 1. Declare 3 variables in one statement
+// var name = "Ayan", age = 20, city = "Karachi";
 
-// let num1 = "10"
-// let num2 = 3
+// 2. Legal variable names
+// var myVar, _name, $price, user1, firstName;
 
-// let num3 = "2"
+// Illegal variable names 
+// var 1name, var-name, var name, @value, class;
 
+// 3. Display in browser
 
-// console.log(num1-num2+num3)
+// document.getElementById("heading").innerHTML = "Rules for naming JS variables";
 
-// // concetination 
+// document.getElementById("content").innerHTML =
+// "Variable names can only contain letters, numbers, $ and _.<br>" +
+// "For example: $my_1stVariable<br><br>" +
 
+// "Variables must begin with a letter, $ or _.<br>" +
+// "For example: $name, _name or name<br><br>" +
 
-// let age = 18
+// "Variable names are case sensitive.<br><br>" +
 
-// alert("i am "+age + "years old")
-
-// question no 2
-
-// let num = 23
-// alert("you have visited this site "+num  )
-
-// question no 3
-
-let birthYear = 2007
-let type = typeof birthYear
-document.write
-// question no 4 
-
-let visitorName = "ahmed bhai"
-let productTitle = "shirt"
-let quality = 10
-
-document.write(`${visitorName} orderd ${quality} ${productTitle} on urbanzilla clothin store`)
-
-
-
-
-
-
-
-
+// "Variable names should not be JS keywords.";
