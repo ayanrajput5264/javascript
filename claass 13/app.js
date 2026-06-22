@@ -37,6 +37,10 @@
 
 // console.log(today - birth)
 
+
+// paste?
+
+
 let today = new Date()
 let birth = new Date("Jan, 4 ,2007")
 
