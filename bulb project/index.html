@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bulb Switch</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', sans-serif; }
+  .font-display { font-family: 'Sora', sans-serif; }
+</style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#0a0c10] relative overflow-hidden">
+
+  <!-- ambient glow -->
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-amber-400/10 blur-[100px]"></div>
+
+  <div class="relative z-10 bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl px-12 py-10 flex flex-col items-center gap-9 shadow-2xl w-[340px]">
+
+    <div class="text-center">
+      <h1 class="font-display text-white text-xl font-semibold">Bulb Switch</h1>
+      <p class="text-slate-400 text-xs mt-1 tracking-wide">Tap to control the light</p>
+    </div>
+
+    <div class="w-56 h-56 rounded-full bg-gradient-to-b from-white/[0.07] to-transparent border border-white/10 flex items-center justify-center">
+      <img id="img" src="./images/off.png" alt="bulb status" class="w-36 h-36 object-contain drop-shadow-[0_0_25px_rgba(250,204,21,0.35)]" />
+    </div>
+
+    <div class="flex gap-3 w-full">
+      <button
+        id="ON"
+        class="flex-1 py-3 rounded-xl bg-amber-400 text-slate-900 font-display font-semibold text-sm tracking-wide hover:bg-amber-300 active:scale-95 transition shadow-lg shadow-amber-400/20">
+        Turn On
+      </button>
+
+      <button
+        id="OFF"
+        class="flex-1 py-3 rounded-xl bg-white/5 border border-white/10 text-slate-300 font-display font-semibold text-sm tracking-wide hover:bg-white/10 active:scale-95 transition">
+        Turn Off
+      </button>
+    </div>
+
+  </div>
+<script src="app.js"></script>
+</body>
+</html>
